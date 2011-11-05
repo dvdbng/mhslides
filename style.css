@@ -5,24 +5,29 @@
 
 body{
     font-family: MuseoSans, sans;
-    font-weight: 800;
-}
-p{
-    font-family: 'Open Sans';
-}
-.thankc{
-    fill:#999;
+    background: repeat-x url("img/page-background.png"), repeat-x url("img/footer-background.png") left bottom;
+    height: 100%;
 }
 
-#ALL_THE_THINGS{
-    -moz-transform: scale3d(40,40,1) translate3d(100px,100px,0px);
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
+#scene{
+    width: 800px;
+    height: 600px;
+    margin-left: -400px;
+    margin-top: -300px;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*-moz-transform-origin: left top;*/
+}
+.slide{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 600px;
 }
 
-#ALL_THE_THINGS.step1{
-    -moz-transform: scale(1,1) translate(0px,0px);
-}
-#ALL_THE_THINGS.step2{
-    -moz-transform: scale(40,40) translate(200px,100px);
+#footer{
+    background-color: 
 }
