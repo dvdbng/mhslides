@@ -15,7 +15,7 @@ p{
 }
 
 #ALL_THE_THINGS{
-    -moz-transform: scale3d(40,40,1) translate3d(100px,100px,0px);
+    -moz-transform: scale(10,10) translate(100px,-100px);
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
 }
@@ -25,4 +25,12 @@ p{
 }
 #ALL_THE_THINGS.step2{
     -moz-transform: scale(40,40) translate(200px,100px);
+}
+.cirq{
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
