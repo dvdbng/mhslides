@@ -118,10 +118,10 @@ function subslide_handler(slide,subslide){
             $(media_selector).addClass("active");
         }
 
-        $("#year-title").text([
-                "PAST: History and background",
-                "PRESENT: Key facts and numbes: How do we work?",
-                "FUTURE: Challenges"
+        $("#year-title").html([
+                "PAST:<br/>History and background",
+                "PRESENT:<br/>Key facts and numbes: How do we work?",
+                "FUTURE:<br/>Challenges"
             ][year.attr("data-title")]);
 
         $("#years-container").css("margin-left","-" + year.attr("data-x") + "px");
