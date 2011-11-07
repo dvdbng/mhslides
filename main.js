@@ -120,7 +120,7 @@ function subslide_handler(slide,subslide){
 
         $("#year-title").html([
                 "PAST:<br/>History and background",
-                "PRESENT:<br/>Key facts and numbes: How do we work?",
+                "PRESENT:<br/>Key facts and numbers: How do we work?",
                 "FUTURE:<br/>Challenges"
             ][year.attr("data-title")]);
 
