@@ -126,6 +126,7 @@ li.item, li.itemnop{
 .yearmedia.active{
     -moz-transform: scale(1,1);
     -webkit-transform: scale(1,1);
+    opacity:1;
 }
 
 #img-members{
@@ -199,4 +200,8 @@ li.item, li.itemnop{
     color: #fff;
     font-style: italic;
     margin-left: 90px;
+}
+
+#logo-mozpub{
+    background-color:white;
 }
