@@ -205,3 +205,11 @@ li.item, li.itemnop{
 #logo-mozpub{
     background-color:white;
 }
+#bicho{
+    position: absolute;
+    -moz-transition-property: -moz-transform, top, left;
+    -moz-transition-duration: 0.6s;
+    -moz-transform-origin: 0 0;
+    -webkit-transition-property: -webkit-transform, top, left;
+    -webkit-transition-duration: 0.6s;
+}

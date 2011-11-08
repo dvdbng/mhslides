@@ -79,29 +79,48 @@ $(document).mousemove(function(e){
         "left" : e.pageX + "px"
     });
 });
-$(document).click(function(e){
-    console.log(e.pageX + "," + e.pageY);
-    subslide_next();
-});
+//$(document).click(function(e){
+//    console.log(e.pageX + "," + e.pageY);
+//    subslide_next();
+//});
 
 $(document).keypress(function(e){
     if(e.keyCode == 39){
         subslide_next();
+        return false;
     }else if(e.keyCode == 37){
         subslide_prev();
+        return false;
     }
 });
 
 
 /**************/
 
-var $items = $(".item[data-order]");
+function move_bicho($elm){
+    if($elm.attr("data-bicho")){
+        var bdata = $elm.attr("data-bicho").split(",").map(parseFloat);
+        var s = bdata[2] * 0.25;
+
+        $("#bicho").css({
+            "left":bdata[0] + "px",
+            "top":bdata[1] + "px",
+            "-moz-transform": "scale("+s+","+s+")",
+            "-webkit-transform": "scale("+s+","+s+")"
+        });
+    }
+}
+
 function subslide_handler(slide,subslide){
+    move_bicho($slides.eq(slide));
+
     if(slide==1 || slide==2){
-        $items.each(function(e){
+        $slides.eq(slide).find(".item[data-order]").each(function(e){
             var $e = $(this);
-            if(parseInt($e.attr("data-order")) <= subslide){
+            var order = parseInt($e.attr("data-order"));
+            if(order <= subslide){
                 $e.addClass("active");
+                order==subslide && move_bicho($e);
             }else{
                 $e.removeClass("active");
             }
@@ -140,6 +159,4 @@ function subslide_handler(slide,subslide){
     $("#footer")[slide==0?"removeClass":"addClass"]("active");
 }
 
-
-slide_delta(0);
-//subslide_delta(2);
+subslide_delta(-1);

@@ -7,7 +7,8 @@
     </head>
     <body>
         <div id="scene">
-            <div class="slide" active>
+            <img src="img/rumbo.png" id="bicho"/>
+            <div class="slide" data-bicho="-50,200,1" active>
                 <svg id="logo">
                     <g transform="translate(-6.05553, -4.34637) scale(0.6,0.6)">
                         <g transform="matrix(1.83593, 0, 0, 2.11429, 67.8205, 163.286)">
@@ -41,6 +42,7 @@
                 <img id="img-youtube" src="img/youtubemh.png" class="yearmedia" style="width:400px; left:10px; top: 200px;"/>
                 <img src="img/mozpub.jpg" class="mozpub yearmedia" style="width:350px; left:30px; top: 280px;"/>
                 <img id="logo-mozpub" src="img/coffee.png" class="mozpub yearmedia" style="width:230px; top:110px; left:70px;"/>
+                <div style="display: none;" class="item" data-order="0"  data-bicho="60,450,0.35"></div>
                 <div id="years-container">
                     <div class="year" data-x="0" data-title="0">
                         <ul>
@@ -69,7 +71,7 @@
                             <li class="item" data-order="7">Twitter</li>
                             <li class="item" data-order="6">Labs</li>
                         </ul>
-                        <h3 class="item" data-order="5">2008</h3>
+                        <h3 class="item" data-order="5"  data-bicho="315,450,0.35">2008</h3>
                     </div>
                     <div class="year" data-x="100" data-title="0">
                         <ul>
@@ -84,7 +86,7 @@
                             <li class="item" data-order="13">Planet, Communication</li>
                             <li class="item" data-order="12">New volunteers</li>
                         </ul>
-                        <h3 class="item" data-order="11">2009</h3>
+                        <h3 class="item" data-order="11" data-bicho="490,450,0.35">2009</h3>
                     </div>
                     <div class="year" data-x="375" data-title="0">
                         <ul>
@@ -113,7 +115,7 @@
                             <li class="item" data-order="25">Structure</li>
                             <li class="item" data-order="24">People</li>
                         </ul>
-                        <h3 class="item" data-order="23">2011</h3>
+                        <h3 class="item" data-order="23" data-bicho="425,450,0.35">2011</h3>
                     </div>
                     <div class="year" data-x="1025" data-title="2" style="width:325px;">
                         <ul>
@@ -130,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" data-subslides="9">
+            <div class="slide" data-subslides="9" data-bicho="450,150,1">
                 <h3>TIPS & ADVICE</h3>
                 <ul id="tips-list">
                     <li class="item" data-order="1">Improve the intra-community relations</li>
@@ -143,12 +145,12 @@
                     <li class="item" data-order="8">Create by participating</li>
                 </ul>
             </div>
-            <div class="slide" id="videoslide" data-subslides="3">
+            <div class="slide" id="videoslide" data-subslides="3" data-bicho="900,150,1">
                 <video id="video">
                     <source src="img/video.webm" type="video/webm" />
                 </video>
             </div>
-            <div class="slide">
+            <div class="slide" data-bicho="500,150,1">
                 <h1 id="tnx">GRACIAS</h1>
             </div>
         </div>
