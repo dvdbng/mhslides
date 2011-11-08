@@ -12,6 +12,7 @@ body{
     color: #484848;
 }
 
+
 #scene{
     width: 800px;
     height: 600px;
@@ -212,4 +213,19 @@ li.item, li.itemnop{
     -moz-transform-origin: 0 0;
     -webkit-transition-property: -webkit-transform, top, left;
     -webkit-transition-duration: 0.6s;
+}
+@media screen and (max-height: 800px){
+    body{
+        background-size: auto, auto 100px;
+    }
+    #footer{
+        height: 40px;
+    }
+    #footer > img{
+        height: 37px;
+    }
+    #footer > h2{
+        height: 40px;
+        line-height: 40px;
+    }
 }

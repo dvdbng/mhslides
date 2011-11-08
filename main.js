@@ -11,7 +11,7 @@ function update_size(){
         "MozTransform":"scale("+s+","+s+")",
         "WebkitTransform":"scale("+s+","+s+")"
     });
-        document.body.style.height = height + "px";
+    document.body.style.height = height + "px";
 
     $("#footer").css("marginLeft",(width-s*800)/2 + "px")
 
