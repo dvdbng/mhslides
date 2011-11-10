@@ -152,7 +152,9 @@ function subslide_handler(slide,subslide){
         }else{
             var video = $("#video")[0];
             video.pause();
-            video.currentTime = 0;
+            try{
+                video.currentTime = 0;
+            }catch(e){}
         }
     }
 
